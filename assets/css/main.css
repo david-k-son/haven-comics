@@ -3132,6 +3132,7 @@ button:disabled,
 .features article .image img {
   border-radius: 5px 5px 0 0;
   width: 100%;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 980px) {
@@ -3493,6 +3494,12 @@ body.is-menu-visible #menu .inner {
   /* max-width: 100%;
   max-height: 100%; */
   object-fit: contain;
+}
+/* .mySlides iframe {
+  text-align: center;
+} */
+.myslides-container {
+  text-align: center;
 }
 
 /* Next & previous buttons */
@@ -4001,7 +4008,8 @@ body.is-preload #banner p {
 
 .wrapper.spotlight .image img {
   /* border-radius: 100%; */
-  width: 100%;
+  /* width: 100%; */
+  max-width: 300px;
 }
 .img-store-container .img-store {
   text-decoration: none;
