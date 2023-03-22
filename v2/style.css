@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+body {
+  font-size: 62.5%;
+}
+
+.banner {
+  max-width: 100%;
+  padding: 0.5em 1em;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00aeef;
+  color: #ffde00;
+  cursor: pointer;
+}
+.banner p {
+  text-shadow: #333 1px 0 10px;
+}
+
+.nav {
+  min-height: 100px;
+  padding: 2.5rem 5rem;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(29, 32, 33);
+  color: white;
+}
+.nav-left,
+.nav-right {
+  display: flex;
+}
+.nav-left div,
+.nav-right div {
+  padding: 0 3rem;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 600px;
+  font-size: 5em;
+  background-image: url("./img/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.hero-logo {
+  text-align: center;
+}
+.hero-logo img {
+  min-height: 500px;
+  margin: 3rem;
+}
+
+.live-stream {
+  background-color: rgb(29, 32, 33);
+  text-align: center;
+  padding: 2rem 0;
+}
+.live-stream div {
+  padding-bottom: 1rem;
+}
+.live-stream p {
+  font-size: 2rem;
+  color: white;
+}
+/* .live-stream iframe {
+  height: 500px;
+  width: 1000px;
+} */
+
+.blogs {
+  min-height: 500px;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #454a4d;
+}
+.blog-card {
+  height: 600px;
+  width: 25%;
+  margin: 2rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  background-color: #d3d3d3;
+  cursor: pointer;
+}
+.blog-card-img {
+  max-width: 100%;
+}
+.blog-card-info {
+  padding: 0 1rem;
+}
+.blog-card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
+/* INFO / CAROUSEL */
+.info {
+  background-color: rgb(29, 32, 33);
+  padding: 2rem 0;
+}
+.info-title {
+  padding-bottom: 2rem;
+  color: white;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+}
+.slideshow-header {
+  padding-bottom: 2rem;
+}
+.slideshow-container > p {
+  font-size: 1.5rem;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  height: 500px;
+}
+.mySlides img {
+  object-fit: cover;
+  height: 100%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  border: 1px solid red;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.location {
+  padding: 5rem 0;
+  background-color: #454a4d;
+}
+
+.contact-header {
+  font-size: 3rem;
+  font-family: "Yellowtail", cursive;
+  color: #00aeef;
+}
+.contact-store {
+  font-size: 2rem;
+  color: #fff;
+}
+.contact-other {
+  color: rgb(175, 168, 157);
+  font-size: 1.25rem;
+}
+
+.location .contact {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.location .contact p {
+  margin: 1rem 0;
+}
+.map {
+  font-size: 2rem;
+}
+
+.socials {
+  background-color: #454a4d;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.socials-logo {
+  padding-top: 2rem;
+  font-size: 3rem;
+}
+.socials-logo i {
+  padding: 0 2rem;
+  cursor: pointer;
+}
+.fa-facebook {
+  color: #4267b2;
+}
+.fa-youtube {
+  color: #ff0000;
+}
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.footer {
+  font-size: 1rem;
+  padding: 2rem 0;
+  text-align: center;
+  background-color: rgb(29, 32, 33);
+  color: rgb(175, 168, 157);
+}
